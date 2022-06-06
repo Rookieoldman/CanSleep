@@ -1,0 +1,73 @@
+body {
+    text-align: center;
+    
+    
+}
+
+@media screen and (min-width: 300px) {
+    #input-holder{
+        max-width: 300px;
+    }
+    
+}
+
+h1{
+    font-size: 2rem;
+}
+#digital-clock{
+    font-size: 3rem;
+    margin: 1rem;
+}
+
+#clock-time{
+    font-size: 2rem;
+    margin: 2rem;
+}
+
+#input-holder{
+    display: inline-grid;
+    grid-template-columns: auto auto auto;
+    text-align: center;
+    border: 1px solid gray;
+    width: -webkit-fill-available;
+    margin: inherit;
+    justify-items: center;    
+}
+.pack{
+    display: grid;
+    grid-template-rows: auto auto;
+    font-size: 2rem;
+    justify-content: center;
+    justify-items: center;
+    margin: 1rem auto;
+    
+}
+#radio{
+    text-align: 2rem;
+    margin:2rem;
+    text-align: center;
+    border:0px;
+    width: 100%;
+    height: 2rem;
+    
+}
+#name-input-holder{
+    font-size: 2rem;
+    background-color: white;
+    border: 1px solid black;
+    top: 190px;
+    padding: 0px 1rem;
+    grid-row: 1/4;
+    grid-column: 1/4;
+    margin-top: -1rem;
+}
+#button{
+    font-size: 2rem;
+    margin: 2rem;
+}
+
+#time-to-sleep{
+    font-size: 2rem;
+    
+
+}

@@ -1,35 +1,45 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta 
-        name="viewport" 
-        content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
+    <link rel="stylesheet" href="/index.css">
 </head>
-<body>
-    <h1>hola que tal
-    </h1>
 
-    <div id = "digital-clock"> </div>
+<body>
+    <h1>Worker's Rest</h1>
+
+    <div id="digital-clock"> </div>
     <div>
         <input type="time" id="clock-time">
-        <input 
-            type="button" 
-            onclick="GetInputTime()" 
-            value="do it"
-        >
+
     </div>
-    
+
     <p id="time-place"></p>
-    
-    <input type="radio" name="workers" id="dos" value="2">
-    <label>2</label>
-    <input type="radio" name="workers" id="three" value="3">
-    <label>3</label>
-    <input type="radio" name="workers" id="four" value="4">
-    <label>4</label>
+    <div id="input-holder">
+        <label id="name-input-holder">workers</label>
+        <div class="pack">
+            <label>2</label>
+            <input type="radio" name="workers" id="radio" value="2">
+        </div>
+        <div class="pack">
+            <label>3</label>
+            <input type="radio" name="workers" id="radio" value="3">
+        </div>
+        <div class="pack">
+            <label>4</label>
+            <input type="radio" name="workers" id="radio" value="4">
+        </div>
+        
+        
+        
+
+    </div>
+    <br>
+    <input type="button" onclick="GetInputTime()" value="Calculate" id="button">
     <p id="time-substract"></p>
     <p id="time-to-sleep"></p>
     <script src="script.js"></script>

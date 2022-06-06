@@ -36,30 +36,21 @@ function GetInputTime(){
     timeInput = document.getElementById("clock-time").value
     document.getElementById("time-place").innerHTML=timeInput
     
-
-    console.log(timeInput)
     
     let arrayTimeInput = String(timeInput).split(":")
     let inputHour = parseInt(arrayTimeInput[0])
     let inputMinutes = parseInt(arrayTimeInput[1])
     sec= TimeToSeconds(inputHour,inputMinutes)
     secActual= TimeToSeconds(hour,minute)
-    
     resultSeconds= TimeSubstract(sec,secActual)
     result= TimeFormater(resultSeconds)
     console.log(result)
-    
-    //document.getElementById("seconds").innerHTML=sec+"<br>"+secActual+"<br>-----------<br>"+resultSeconds
-    document.getElementById("time-to-sleep").innerHTML=(result)
-    
-
-    
+    document.getElementById("time-to-sleep").innerHTML=(result)    
 }
 
 function TimeToSeconds(hours,minutes){
     let h = hours
-    let m = minutes
-    
+    let m = minutes    
     let s = (h*60*60)+(m*60);
     console.log(s)
     return s
